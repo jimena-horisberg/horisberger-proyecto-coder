@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Quicksand:wght@300&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+}
+
+.imagen{
+    max-width: 30%;
+    margin: 10px 0 0 10px;
+}
+/* BARRA NAVEGACIÓN*/
+nav{
+    background-color:rgb(55, 71, 71);
+    height: 100px;
+    opacity:1;
+    transition: opacity 900ms;
+     }
+    
+nav ul{
+    text-align:center;
+  
+}
+nav ul li{
+    display: inline;
+    padding: 60px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:blanchedalmond;
+    font-size: 20px;
+    font-weight:lighter;
+    
+}
+
+a:hover{
+    
+    opacity:0.3;
+   transition: opacity 900ms; 
+}
+
+#logo{
+    padding: 0%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#logo img{
+    width: 80px;
+}
+
+/*INDEX*/
+
+.imgPortadaIndex{
+height: 400px;
+background-image:url(./img/indexFoto1.jpg);
+background-size: contain;
+color: transparent;
+}
+
+.imgChef{
+    max-width: 30%;
+    margin: 60px 0 0 0;
+}
+
+.ordenarChef{
+    display: inline;
+}
+
+#textoChef{
+    margin-left: 35%;
+    font-style: italic;
+    font-weight: lighter;
+}
+.nuestrosVinos{
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.tamañoVinos{
+height: 400px;
+
+}
+
+.listaVinos{
+   display:inline;
+}
+
+
+/*WINE EXPERIENCE*/
+.imgWineExperience{
+    height:450px;
+    background-image: url(./img/wineExperienceFoto1.jpg);
+    background-size:contain;
+    color:transparent;
+    
+}
+
+
+h1{
+    font-size: 70px;
+    color: rgba(0, 0, 0, 0.795);
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+#detalleWineExperience{
+    text-align:justify;
+    font-style: italic;
+    color: rgba(77, 77, 77, 0.795);
+    margin-top: 60px 0 60px 0;
+  
+
+}
+
+
+.subtituloWineExperience{
+    margin: 80px 0 0 10px;
+    color: rgba(0, 0, 0, 0.795);
+}
+
+
+
+/*HISTORIA*/
+
+.portadaHistoria{
+    height: 450px;
+    background-image: url(./img/nuestraHistoriaPortada.jpg);
+    background-size:contain;
+    color:transparent;
+
+}
+
+#tituloHistoria{
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+#familia{
+    text-align: left;
+    display: inline;
+   margin-top: 20px;
+   font-style: italic;
+   font-weight: lighter;
+}
+
+/*VINOS*/
+
+.portadaVinos{
+    height: 450px;
+    background-image: url(./img/bodega.jpg);
+    background-size:contain;
+    color:transparent;
+}
+
+.comprasVinos li img{
+    width: 50%;
+    margin: 60px;
+}
+
+.decoCompraVino{
+    text-decoration: none;
+    color: darkslategrey;
+    font-size: medium;
+    font-weight: bold;
+    
+}
+
+.portadaContacto{
+    height: 450px;
+    background-image: url(./img/contacto.jpg);
+    background-size:contain;
+    color:transparent;
+}
+
+.formularioContacto{
+    margin: 40px 0 0 20px;
+    border: double 2px grey;
+    width: 30%;
+}
+
+form{
+    color:rgb(49, 49, 49);
+    
+}
+form div{
+    padding: 10px;
+}
+
+/*FOOTER*/
+footer p{
+    background-color:darkslategray;
+    margin-top:80px;
+    text-align: center;
+    padding: 20px;
+}
+
