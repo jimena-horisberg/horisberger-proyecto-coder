@@ -7,71 +7,70 @@
     <title>Bodega La Regina|Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-    <header>
-        <nav>
-            <ul>
-               <li> <a href="index.html">Inicio</a></li>
-            
-               <li> <a href="./sections/vinos.html">Vinos</a></li>
-            
-                <li><a href="./sections/historia.html">Historia</a></li>
-                
-                <li id="logo"><img src="./img/logo.png" alt="logo de la bodega"></li>
-            
-                <li><a href="./sections/wineExperience.html">Wine Experience</a></li>
-            
-                <li><a href="./sections/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+<body id="body">
 
-        <div class="imgPortadaIndex">
-            imagen de portada index
-        </div>
-        
+    <header id="headerIndex">
         <h1>Bodega La Regina</h1>
-
-        <section>
-         
-                <img src="./img/chef.jpg" alt="chef mujer" class="imgChef" class="ordenarChef">
+        <nav class="navIndex">
+            <ul class="listaIndex">
+                <li> <a href="index.html">Inicio</a></li>
+             
+                <li> <a href="./sections/vinos.html">Vinos</a></li>
+             
+                 <li><a href="./sections/historia.html">Historia</a></li>
+             
+                 <li><a href="./sections/wineExperience.html">Wine Experience</a></li>
+             
+                 <li><a href="./sections/contacto.html">Contacto</a></li>
+             </ul>
+        </nav>
+    
+        <video src="./video/videoIndex.mp4" autoplay muted loop="true"></video>
+    </header>
+    
+    <!--PARTE PRINCIPAL DEL INDEX-->
+    <main id="mainIndex">
+    
+        <!--INFO DEL CHEF-->
+        <section id="infoChef">
+            <img src="./img/chef.jpg" alt="chef Bodega" id="imgChef">
+            <p id="textoChef">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque soluta laudantium voluptate, accusantium dolor libero voluptatibus assumenda quae, provident non mollitia, ut placeat vero! Quis quisquam voluptatibus repudiandae ratione animi?</p>
+        </section>
+    
+        <!--INFO DE LOS VINOS-->
+        <h2 id="tituloVinoIndex">Nuestros vinos</h2>
+        <section id="vinosIndex">
+            <div id="malbecIndex">
+                <img src="./img/malbec.jpg" alt="malbec" class="imgIndexVinos">
+                <a href="">Malbec</a>
+            </div>
+    
+            <div id="cabernetIndex">
+                <img src="./img/cabernetFranc.jpg" alt="cabernet Franc" class="imgIndexVinos">
+                <a href="">Cabernet Franc</a>
+            </div>
+    
+            <div id="sauvignonIndex">
+                <img src="./img/sauvignonBlanc.jpg" alt="sauvignon Blanc" class="imgIndexVinos">
+                <a href="">Sauvignon Blanc</a>
+            </div>
+        </section>
+    
+        <!--INFO DE WINE EXPERIENCE-->
+        <h3 id="tituloWineExperience">Wine Experience</h3>
+        <section id="indexWineE">
+            <img src="./img/wineExperienceFoto2.jpg" alt="chef Bodega" id="imgChef">
+            <p id="textoChef">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque soluta laudantium voluptate, accusantium dolor libero voluptatibus assumenda quae, provident non mollitia, ut placeat vero! Quis quisquam voluptatibus repudiandae ratione animi?</p>
             
-            <div id="textoChef">
-            <p class="ordenarChef" >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius neque, culpa eum error, voluptas fugiat libero, sapiente consectetur ab ipsam repellat deserunt. Fuga tempore delectus omnis commodi modi? Porro, natus!
-                Laborum nihil ea eligendi facere aliquam eaque sint quidem, voluptatem sit provident eius nulla maiores molestiae, soluta ut fugiat. Adipisci illo pariatur labore et minima sapiente eum, nisi voluptatum nam.
-            </p>
-            </div>       
         </section>
+    
     </main>
-
-        <section>
-            <h2 class="nuestrosVinos">Nuestros Vinos</h2>
-
-            <ul>
-                <li class="listaVinos"> 
-                    <img src="./img/malbec.jpg" alt="vino Malbec" class="tamañoVinos">
-                </li>
-                
-                <li class="listaVinos"> 
-                    <img src="./img/cabernetFranc.jpg" alt="vino Cabernet Franc" class="tamañoVinos">
-                </li>
-
-                <li class="listaVinos">
-                    <img src="./img/sauvignonBlanc.jpg" alt="vino Sauvignon Blanc" class="tamañoVinos">
-                </li>
-            </ul>
-        </section>
-
-<footer>
-    <p>© 2022. Bodega La Regina Valle de Uco - Mendoza, Argentina</p>
-</footer>
-
-
-</body>
-
-
+    
+    <footer class="footerIndex">
+        © 2022. Bodega La Regina Valle de Uco - Mendoza, Argentina
+    </footer>
+    
+    </body>
 
 </html>
