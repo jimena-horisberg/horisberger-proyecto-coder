@@ -111,6 +111,16 @@ video{
     
 }
 
+.transicionVinosIndex{
+    transition: width 5s;
+
+}
+
+.transicionVinosIndex :hover{
+    width: 100%;
+   
+}
+
 #malbecIndex{
     display: flex;
     flex-direction: column;
