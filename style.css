@@ -235,11 +235,10 @@ video{
 /*--------------------------------------SECCION HISTORIA----------------------------------*/
 
 .portadaHistoria{
-    height: 450px;
+    height: 80vh;
     background-image: url(./img/nuestraHistoriaPortada.jpg);
-    background-size:contain;
-    color:transparent;
-
+    background-size:cover;
+ 
 }
 
 #tituloHistoria{
@@ -248,14 +247,31 @@ video{
 
 }
 
-#familia{
-    text-align: left;
-    display: inline;
-   margin-top: 20px;
-   font-style: italic;
-   font-weight: lighter;
+.seccionHistoria{
+    display: grid;
+    grid-template-areas:
+    "titulo"
+    "imagen"
+    "descripcion";
+    justify-items: center;
+    row-gap: 10%;
+    height: 100vh;
+    margin-left: 5%;
+   
 }
 
+.imagenHistoria{
+    width: 100vh;
+    grid-area: imagen;
+}
+
+.displayFamilia{
+    grid-area: titulo;
+}
+
+.displayParrafo{
+    grid-area: descripcion;
+}
 /*--------------------------------------SECCION VINOS----------------------------------*/
 
 .subtituloVinos{
@@ -271,25 +287,20 @@ video{
 /*--------------------------------------SECCION CONTACTO----------------------------------*/
 
 .portadaContacto{
-    height: 450px;
+    height:80vh;
     background-image: url(./img/contacto.jpg);
-    background-size:contain;
-    color:transparent;
+    background-size:cover;
 }
 
-.formularioContacto{
-    margin: 40px 0 0 20px;
-    border: double 2px grey;
-    width: 30%;
+
+
+.formulario{
+    border: 1px black solid;
+    border-radius: 1%;
+    background-color: cornsilk;
+
 }
 
-form{
-    color:rgb(49, 49, 49);
-    
-}
-form div{
-    padding: 10px;
-}
 
 
 
@@ -349,7 +360,20 @@ form div{
  .reservasWineE{
      flex-direction: column;
  }
- }
+
+ /*modificaciones media queries Nuestra Historia*/
+.imagenHistoria{
+    display: none;
+}
+.seccionHistoria{
+    grid-template-areas:
+"titulo"
+"descripcion";
+height: 45vh;
+margin-left: 0%;
+}
+
+}
  /*------------------------------------------------------------------------------------*/
  /*IPAD*/
  @media screen and (min-width:481px) {
@@ -369,6 +393,22 @@ form div{
      .imgWineExperience{
          background-repeat: no-repeat;
      }
+
+/*modificaciones media queries Nuestra Historia*/
+#bodyHistoria{
+    width: 100vh;
+}
+.seccionHistoria{
+margin-left: 0%;
     
  }
  
+}
+ 
+@media screen and (min-width:1023px){
+    /*modificaciones media queries Nuestra Historia*/
+
+    #bodyHistoria{
+        width: fit-content;
+    }
+}
