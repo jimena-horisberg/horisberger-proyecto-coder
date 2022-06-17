@@ -66,7 +66,6 @@ video{
     flex-direction: row;
     margin-top: 30vh;
     background-color:rgb(177, 177, 177);
-    
 }
 
 #imgChef{
@@ -196,7 +195,7 @@ video{
 
 .imgWineExperience{
     height:450px;
-    background-image: url(./img/wineExperienceFoto1.jpg);
+    background-image: url(../img/wineExperienceFoto1.jpg);
     background-size:cover;
     color:transparent;
     
@@ -236,7 +235,7 @@ video{
 
 .portadaHistoria{
     height: 80vh;
-    background-image: url(./img/nuestraHistoriaPortada.jpg);
+    background-image: url(../img/nuestraHistoriaPortada.jpg);
     background-size:cover;
  
 }
@@ -246,6 +245,7 @@ video{
     padding-top: 20px;
 
 }
+
 
 .seccionHistoria{
     display: grid;
@@ -288,7 +288,7 @@ video{
 
 .portadaContacto{
     height:80vh;
-    background-image: url(./img/contacto.jpg);
+    background-image: url(../img/contacto.jpg);
     background-size:cover;
 }
 
@@ -372,6 +372,16 @@ video{
 height: 45vh;
 margin-left: 0%;
 }
+
+.displayFamilia{
+    grid-area: titulo;
+}
+
+.displayParrafo{
+    grid-area: descripcion;
+}
+
+
 
 }
  /*------------------------------------------------------------------------------------*/

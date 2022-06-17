@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+#body {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr auto;
+  grid-template-areas: "header" "main" "footer";
+  font-family: 'Quicksand', sans-serif;
+  color: #121212; }
+
+a {
+  text-decoration: none;
+  color: #121212; }
+
+/*--------------------------------------INDEX----------------------------------*/
+/*HEADER INDEX*/
+#headerIndex {
+  width: 100%;
+  grid-area: header; }
+
+h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2vh;
+  font-size: 50px;
+  font-weight: 200; }
+
+video {
+  width: 100%; }
+
+/*MAIN INDEX*/
+/*MAIN INFORMACION CHEF*/
+#mainIndex {
+  width: 100%;
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+
+#infoChef {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30vh;
+  background-color: #b1b1b1; }
+
+#imgChef {
+  width: 40%;
+  margin: 3%;
+  border-radius: 1%; }
+
+#textoChef {
+  align-self: center;
+  font-style: oblique; }
+
+/*MAIN INFORMACION SOBRE VINOS*/
+#tituloVinoIndex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15vh;
+  font-size: 30px;
+  font-weight: 200; }
+
+#vinosIndex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 15vh; }
+
+.transicionVinosIndex {
+  transition: width 5s; }
+
+.transicionVinosIndex :hover {
+  width: 100%; }
+
+#malbecIndex {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+#cabernetIndex {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+#sauvignonIndex {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.imgIndexVinos {
+  width: 90%; }
+
+/*FOOTER INDEX*/
+.footerIndex {
+  width: 100%;
+  grid-area: footer;
+  background-color: darkslategray;
+  margin-top: 80px;
+  text-align: center;
+  padding: 20px; }
+
+/*------------------------------------------------------------------------------------*/
+/*--------------------------------------SECCION WINE EXPERIENCE----------------------------------*/
+/*MAIN INFORMACION SOBRE WINE EXPERIENCE*/
+.gridWineE {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr auto;
+  grid-template-areas: "header" "main" "footer";
+  font-family: 'Quicksand', sans-serif;
+  color: #121212; }
+
+.headerWineE {
+  grid-area: header; }
+
+.mainWineE {
+  grid-area: main;
+  margin-left: 2%;
+  margin-right: 2%; }
+
+.footerWineE {
+  grid-area: footer;
+  width: 100%;
+  background-color: darkslategray;
+  margin-top: 80px;
+  text-align: center;
+  padding: 20px; }
+
+#indexWineE {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5vh; }
+
+#tituloWineExperience {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30vh;
+  justify-content: center; }
+
+.imgWineExperience {
+  height: 450px;
+  background-image: url(../img/wineExperienceFoto1.jpg);
+  background-size: cover;
+  color: transparent; }
+
+.subtituloWineExperience {
+  margin: 80px 0 0 10px;
+  color: rgba(0, 0, 0, 0.795); }
+
+#detalleWineExperience {
+  text-align: justify;
+  font-style: italic;
+  color: rgba(77, 77, 77, 0.795);
+  margin-top: 2%; }
+
+.reservasWineE {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3%; }
+
+.reservasWineE img {
+  width: 40%;
+  border-radius: 1%; }
+
+.reservasWineE p {
+  align-self: center;
+  font-style: italic;
+  margin-left: 5%; }
+
+/*--------------------------------------SECCION HISTORIA----------------------------------*/
+.portadaHistoria {
+  height: 80vh;
+  background-image: url(../img/nuestraHistoriaPortada.jpg);
+  background-size: cover; }
+
+#tituloHistoria {
+  text-align: center;
+  padding-top: 20px; }
+
+.seccionHistoria {
+  display: grid;
+  grid-template-areas: "titulo" "imagen" "descripcion";
+  justify-items: center;
+  row-gap: 10%;
+  height: 100vh;
+  margin-left: 5%; }
+
+.imagenHistoria {
+  width: 100vh;
+  grid-area: imagen; }
+
+.displayFamilia {
+  grid-area: titulo; }
+
+.displayParrafo {
+  grid-area: descripcion; }
+
+/*--------------------------------------SECCION VINOS----------------------------------*/
+.subtituloVinos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5vh;
+  font-size: 50px;
+  font-weight: 200; }
+
+/*--------------------------------------SECCION CONTACTO----------------------------------*/
+.portadaContacto {
+  height: 80vh;
+  background-image: url(../img/contacto.jpg);
+  background-size: cover; }
+
+.formulario {
+  border: 1px black solid;
+  border-radius: 1%;
+  background-color: cornsilk; }
+
+/*MEDIA QUIERIES*/
+/*------------------------------------------------------------------------------------*/
+/*CELULAR*/
+@media screen and (max-width: 480px) {
+  /*modificaciones media queries index*/
+  #body {
+    grid-template-rows: auto 2fr auto; }
+  #headerIndex {
+    width: 100%;
+    grid-area: header;
+    height: min-content; }
+  #infoChef {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vh; }
+  #vinosIndex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15vh; }
+  div .imgIndexVinos {
+    margin: 10%; }
+  .imgIndexVinos {
+    width: 50%; }
+  #indexWineE {
+    display: flex;
+    flex-direction: column; }
+  #tituloWineExperience {
+    margin-top: 15vh; }
+  /*modificaciones media queries Wine Experience*/
+  .imgWineExperience {
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .gridWineE {
+    grid-template-rows: auto 2fr auto; }
+  .reservasWineE {
+    flex-direction: column; }
+  /*modificaciones media queries Nuestra Historia*/
+  .imagenHistoria {
+    display: none; }
+  .seccionHistoria {
+    grid-template-areas: "titulo" "descripcion";
+    height: 45vh;
+    margin-left: 0%; }
+  .displayFamilia {
+    grid-area: titulo; }
+  .displayParrafo {
+    grid-area: descripcion; } }
+
+/*------------------------------------------------------------------------------------*/
+/*IPAD*/
+@media screen and (min-width: 481px) {
+  #body {
+    grid-template-rows: auto 2fr auto; }
+  #textoChef {
+    padding-right: 10vw; }
+  #tituloWineExperience {
+    margin-top: 15vh; }
+  /*modificaciones media queries Wine Experience*/
+  .imgWineExperience {
+    background-repeat: no-repeat; }
+  /*modificaciones media queries Nuestra Historia*/
+  #bodyHistoria {
+    width: 100vh; }
+  .seccionHistoria {
+    margin-left: 0%; } }
+
+@media screen and (min-width: 1023px) {
+  /*modificaciones media queries Nuestra Historia*/
+  #bodyHistoria {
+    width: fit-content; } }
