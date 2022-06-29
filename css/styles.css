@@ -18,6 +18,7 @@ a {
   text-decoration: none;
   color: #121212; }
 
+/*MIXINS GENERALES*/
 /*--------------------------------------INDEX----------------------------------*/
 /*HEADER INDEX*/
 #headerIndex {
@@ -25,9 +26,11 @@ a {
   grid-area: header; }
 
 h1 {
+  height: 30vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   margin-top: 2vh;
   font-size: 50px;
   font-weight: 200; }
@@ -41,7 +44,7 @@ video {
   width: 100%;
   grid-area: main;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap; }
 
 .infoChef {
@@ -75,12 +78,13 @@ video {
   flex-direction: row;
   margin-top: 15vh; }
 
+/* AGREGO ANIDACION*/
 .transicionVinosIndex {
   transition: width 5s; }
+  .transicionVinosIndex :hover {
+    width: 100%; }
 
-.transicionVinosIndex :hover {
-  width: 100%; }
-
+/*DECLARO MIXIN*/
 #malbecIndex {
   display: flex;
   flex-direction: column;
@@ -130,6 +134,7 @@ video {
 .footerWineE {
   grid-area: footer;
   width: 100%;
+  grid-area: footer;
   background-color: darkslategray;
   margin-top: 80px;
   text-align: center;
@@ -163,19 +168,18 @@ video {
   color: rgba(77, 77, 77, 0.795);
   margin-top: 2%; }
 
+/*INCLUYO ANIDACION SASS*/
 .reservasWineE {
   display: flex;
   flex-direction: row;
   margin-top: 3%; }
-
-.reservasWineE img {
-  width: 40%;
-  border-radius: 1%; }
-
-.reservasWineE p {
-  align-self: center;
-  font-style: italic;
-  margin-left: 5%; }
+  .reservasWineE img {
+    width: 40%;
+    border-radius: 1%; }
+  .reservasWineE p {
+    align-self: center;
+    font-style: italic;
+    margin-left: 5%; }
 
 /*--------------------------------------SECCION HISTORIA----------------------------------*/
 .portadaHistoria {

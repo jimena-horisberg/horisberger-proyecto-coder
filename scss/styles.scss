@@ -26,6 +26,24 @@ a{
     color: rgb(18, 18, 18);
 }
 
+/*MIXINS GENERALES*/
+@mixin footer {
+    width: 100%;
+    grid-area: footer;
+    background-color:darkslategray;
+    margin-top:80px;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+@mixin columna-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
 /*--------------------------------------INDEX----------------------------------*/
 /*HEADER INDEX*/
 #headerIndex{
@@ -34,9 +52,10 @@ a{
 }
 
 h1{
-    display: flex;
-    flex-direction: row;
+    height: 30vh;
+    @include columna-flex();
     justify-content: center;
+    align-items: center;
     margin-top: 2vh;
     font-size: 50px;
    font-weight: 200;
@@ -48,6 +67,9 @@ video{
     width: 100%;
 }
 
+
+
+
 /*MAIN INDEX*/
 
 /*MAIN INFORMACION CHEF*/
@@ -55,15 +77,13 @@ video{
 #mainIndex{
     width: 100%;
     grid-area: main;
-    display: flex;
-    flex-direction: column;
+    @include columna-flex();
     flex-wrap: wrap;
 }
 
 .infoChef{
     width: 100%;
-    display: flex;
-    flex-direction: row;
+    @include columna-flex();
     margin-top: 30vh;
     background-color:rgb(177, 177, 177);
 }
@@ -81,9 +101,9 @@ video{
 
 /*MAIN INFORMACION SOBRE VINOS*/
 
+
 #tituloVinoIndex{
-    display: flex;
-    flex-direction: row;
+    @include columna-flex();
     justify-content: center;
     margin-top: 15vh;
     font-size: 30px;
@@ -92,38 +112,40 @@ video{
 
 #vinosIndex{
     width: 100%;
-    display: flex;
-    flex-direction: row;
+    @include columna-flex();
     margin-top: 15vh;
     
 }
 
+/* AGREGO ANIDACION*/
 .transicionVinosIndex{
     transition: width 5s;
-
+    :hover{
+        width: 100%;
+    
+    }
 }
 
-.transicionVinosIndex :hover{
-    width: 100%;
-   
-}
 
-#malbecIndex{
+/*DECLARO MIXIN*/
+@mixin vinos {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+#malbecIndex{
+    @include vinos;
 }
 
 #cabernetIndex{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include vinos;
 }
 
 #sauvignonIndex{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include vinos;
 }
 
 .imgIndexVinos{
@@ -136,12 +158,7 @@ video{
 /*FOOTER INDEX*/
 
 .footerIndex{
-    width: 100%;
-    grid-area: footer;
-    background-color:darkslategray;
-    margin-top:80px;
-    text-align: center;
-    padding: 20px;
+    @include footer();
 }
 
 
@@ -172,23 +189,17 @@ video{
 
 .footerWineE{
     grid-area: footer;
-    width: 100%;
-    background-color:darkslategray;
-    margin-top:80px;
-    text-align: center;
-    padding: 20px;
+    @include footer();
 }
 
 #indexWineE{
     width: 100%;
-    display: flex;
-    flex-direction: row;
+    @include columna-flex();
     margin-top: 5vh;
 }
 
 #tituloWineExperience{
-    display: flex;
-    flex-direction: row;
+    @include columna-flex();
     margin-top: 30vh;
     justify-content: center;
 }
@@ -213,23 +224,24 @@ video{
   
 
 }
-
+/*INCLUYO ANIDACION SASS*/
 .reservasWineE{
-    display: flex;
-    flex-direction: row;
+    @include columna-flex();
     margin-top: 3%;
+
+    img{
+        width: 40%;
+        border-radius: 1%;
+    }
+
+    p{
+        align-self: center;  
+        font-style: italic; 
+        margin-left: 5%;
+       }
+    
 }
 
-.reservasWineE img{
-    width: 40%;
-    border-radius: 1%;
-}
-
-.reservasWineE p{
- align-self: center;  
- font-style: italic; 
- margin-left: 5%;
-}
 
 /*--------------------------------------SECCION HISTORIA----------------------------------*/
 
@@ -275,8 +287,7 @@ video{
 /*--------------------------------------SECCION VINOS----------------------------------*/
 
 .subtituloVinos{
-    display: flex;
-    flex-direction: row;
+    @include columna-flex();
     justify-content: center;
     margin: 5vh;
     font-size: 50px;
