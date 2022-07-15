@@ -25,6 +25,25 @@ a {
   width: 100%;
   grid-area: header; }
 
+.videoIndex {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; }
+  .videoIndex .videoContainer {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    width: 100%; }
+  .videoIndex h1 {
+    text-align: center;
+    font-size: 6rem;
+    z-index: 1;
+    opacity: 0.8; }
+
 h1 {
   height: 30vh;
   display: flex;
@@ -67,8 +86,9 @@ video {
 #tituloVinoIndex {
   display: flex;
   flex-direction: row;
+  width: 100%;
   justify-content: center;
-  margin-top: 15vh;
+  margin-top: 5%;
   font-size: 30px;
   font-weight: 200; }
 
@@ -77,12 +97,12 @@ video {
   display: flex;
   flex-direction: row;
   margin-top: 15vh; }
+  #vinosIndex a {
+    color: black; }
 
 /* AGREGO ANIDACION*/
-.transicionVinosIndex {
-  transition: width 5s; }
-  .transicionVinosIndex :hover {
-    width: 100%; }
+.transicionVinosIndex :hover {
+  width: 100%; }
 
 /*DECLARO MIXIN*/
 #malbecIndex {
@@ -102,6 +122,13 @@ video {
 
 .imgIndexVinos {
   width: 90%; }
+
+#tituloWineExperience {
+  width: 100%;
+  justify-content: center;
+  margin-top: 5%;
+  font-size: 30px;
+  font-weight: 200; }
 
 /*FOOTER INDEX*/
 .footerIndex {

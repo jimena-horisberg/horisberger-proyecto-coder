@@ -41,9 +41,16 @@
             </div>
           </nav>
 
-      <h1>Bodega La Regina</h1>
-      
-        <video src="./video/videoIndex.mp4" autoplay muted loop="true"></video>
+      <div class="videoIndex">
+        <h1>Bodega La Regina</h1>
+        <div class="videoContainer">
+        <video autoplay muted loop="true">
+          <source src="./video/videoIndex.mp4" type="video/mp4">
+        </video>
+        </div>
+      </div>
+
+
     </header>
     
     <!--PARTE PRINCIPAL DEL INDEX-->
@@ -58,20 +65,28 @@
         <!--INFO DE LOS VINOS-->
         <h2 id="tituloVinoIndex">Nuestros vinos</h2>
         <section id="vinosIndex">
-            <div id="malbecIndex" class="transicionVinosIndex">
-                <img src="./img/malbec.jpg" alt="malbec" class="imgIndexVinos">
-                <a href="">Malbec</a>
-            </div>
-    
-            <div id="cabernetIndex" class="transicionVinosIndex">
-                <img src="./img/cabernetFranc.jpg" alt="cabernet Franc" class="imgIndexVinos">
-                <a href="">Cabernet Franc</a>
-            </div>
-    
-            <div id="sauvignonIndex" class="transicionVinosIndex">
-                <img src="./img/sauvignonBlanc.jpg" alt="sauvignon Blanc" class="imgIndexVinos">
-                <a href="">Sauvignon Blanc</a>
-            </div>
+           
+                <a href=""> 
+                   <div id="malbecIndex" class="transicionVinosIndex">
+                    <img src="./img/malbec.jpg" alt="malbec" class="imgIndexVinos">
+                    <p>Malbec</p>
+                   </div>
+                </a>
+            
+                <a href=""> 
+                  <div id="cabernetIndex" class="transicionVinosIndex">
+                   <img src="./img/cabernetFranc.jpg" alt="cabernet Franc" class="imgIndexVinos">
+                   <p>Cabernet Franc</p>
+                  </div>
+               </a>
+
+               <a href=""> 
+                <div id="sauvignonIndex" class="transicionVinosIndex">
+                 <img src="./img/sauvignonBlanc.jpg" alt="Sauvignon Blanc" class="imgIndexVinos">
+                 <p>Sauvignon Blanc</p>
+                </div>
+             </a>
+
         </section>
     
         <!--INFO DE WINE EXPERIENCE-->
