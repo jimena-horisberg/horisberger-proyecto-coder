@@ -70,7 +70,6 @@ video {
   width: 100%;
   display: flex;
   flex-direction: row;
-  margin-top: 30vh;
   background-color: #b1b1b1; }
 
 #imgChef {
