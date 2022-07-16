@@ -96,7 +96,7 @@ video {
   width: 100%;
   display: flex;
   flex-direction: row;
-  margin-top: 15vh; }
+  margin: 15vh 0 15vh 0; }
   #vinosIndex a {
     color: black; }
 
@@ -126,7 +126,7 @@ video {
 #tituloWineExperience {
   width: 100%;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 15%;
   font-size: 30px;
   font-weight: 200; }
 
@@ -140,6 +140,54 @@ video {
   padding: 20px; }
 
 /*------------------------------------------------------------------------------------*/
+/*--------------------------------------SECCION VINOS----------------------------------*/
+.portada {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+  margin-bottom: 8%;
+  background-image: url(../img/bodega.jpg); }
+  .portada h1 {
+    color: ghostwhite; }
+  .portada p {
+    color: aliceblue;
+    margin: 0 10% 10% 10%; }
+
+/*--------------------------------------SECCION HISTORIA----------------------------------*/
+.portadaHistoria {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+  margin-bottom: 8%;
+  background-image: url(../img/nuestraHistoriaPortada.jpg);
+  background-repeat: no-repeat; }
+  .portadaHistoria h1 {
+    color: #121212; }
+
+.seccionHistoria {
+  display: grid;
+  grid-template-areas: "titulo" "imagen" "descripcion";
+  justify-items: center;
+  row-gap: 10%;
+  height: 100vh;
+  margin-left: 5%; }
+
+.imagenHistoria {
+  width: 100vh;
+  grid-area: imagen; }
+
+.displayFamilia {
+  grid-area: titulo; }
+
+.displayParrafo {
+  grid-area: descripcion;
+  margin-left: 5%;
+  font-style: italic; }
+
 /*--------------------------------------SECCION WINE EXPERIENCE----------------------------------*/
 /*MAIN INFORMACION SOBRE WINE EXPERIENCE*/
 .gridWineE {
@@ -180,14 +228,27 @@ video {
   justify-content: center; }
 
 .imgWineExperience {
-  height: 450px;
-  background-image: url(../img/wineExperienceFoto1.jpg);
+  background-position: center;
   background-size: cover;
-  color: transparent; }
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+  margin-bottom: 8%;
+  background-image: url(../img/wineExperienceFoto1.jpg); }
+  .imgWineExperience h1 {
+    color: ghostwhite; }
+  .imgWineExperience p {
+    color: aliceblue;
+    margin: 0 10% 10% 10%; }
 
 .subtituloWineExperience {
   margin: 80px 0 0 10px;
   color: rgba(0, 0, 0, 0.795); }
+
+.botonUbicacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
 
 #detalleWineExperience {
   text-align: justify;
@@ -208,53 +269,23 @@ video {
     font-style: italic;
     margin-left: 5%; }
 
-/*--------------------------------------SECCION HISTORIA----------------------------------*/
-.portadaHistoria {
-  height: 80vh;
-  background-image: url(../img/nuestraHistoriaPortada.jpg);
-  background-size: cover; }
-
-#tituloHistoria {
-  text-align: center;
-  padding-top: 20px; }
-
-.seccionHistoria {
-  display: grid;
-  grid-template-areas: "titulo" "imagen" "descripcion";
-  justify-items: center;
-  row-gap: 10%;
-  height: 100vh;
-  margin-left: 5%; }
-
-.imagenHistoria {
-  width: 100vh;
-  grid-area: imagen; }
-
-.displayFamilia {
-  grid-area: titulo; }
-
-.displayParrafo {
-  grid-area: descripcion; }
-
-/*--------------------------------------SECCION VINOS----------------------------------*/
-.subtituloVinos {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 5vh;
-  font-size: 50px;
-  font-weight: 200; }
-
 /*--------------------------------------SECCION CONTACTO----------------------------------*/
 .portadaContacto {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
   height: 80vh;
-  background-image: url(../img/contacto.jpg);
-  background-size: cover; }
+  margin-bottom: 8%;
+  background-image: url(../img/contacto.jpg); }
+  .portadaContacto h1 {
+    color: ghostwhite; }
 
 .formulario {
   border: 1px black solid;
   border-radius: 1%;
-  background-color: cornsilk; }
+  background-color: transparent;
+  padding: 2%; }
 
 /*MEDIA QUIERIES*/
 /*------------------------------------------------------------------------------------*/

@@ -42,7 +42,14 @@ a{
     flex-direction: row;
 }
 
-
+@mixin portada{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 8%;
+}
 
 /*--------------------------------------INDEX----------------------------------*/
 /*HEADER INDEX*/
@@ -105,6 +112,7 @@ video{
     grid-area: main;
     @include columna-flex();
     flex-wrap: wrap;
+
 }
 
 .infoChef{
@@ -140,13 +148,15 @@ video{
 #vinosIndex{
     width: 100%;
     @include columna-flex();
-    margin-top: 15vh;
+    margin: 15vh 0 15vh 0;
 
     a{
         color: black;
         
         
     }
+
+   
     
 }
 
@@ -188,10 +198,12 @@ video{
  
 }
 
+
+
 #tituloWineExperience{
     width: 100%;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 15%;
     font-size: 30px;
    font-weight: 200;
 }
@@ -204,6 +216,66 @@ video{
 
 
 /*------------------------------------------------------------------------------------*/
+
+/*--------------------------------------SECCION VINOS----------------------------------*/
+
+.portada{
+    @include portada();
+    background-image: url(../img/bodega.jpg);
+
+    h1{
+        color: ghostwhite;
+    
+    }
+    
+    p{
+        color: aliceblue;
+        margin:0 10% 10% 10%;
+        
+    }
+    
+    }
+    
+/*--------------------------------------SECCION HISTORIA----------------------------------*/
+
+.portadaHistoria{
+    @include portada();
+    background-image: url(../img/nuestraHistoriaPortada.jpg);
+    background-repeat: no-repeat;
+
+h1{
+    color:rgb(18, 18, 18);
+}
+}
+
+.seccionHistoria{
+    display: grid;
+    grid-template-areas:
+    "titulo"
+    "imagen"
+    "descripcion";
+    justify-items: center;
+    row-gap: 10%;
+    height: 100vh;
+    margin-left: 5%;
+   
+}
+
+.imagenHistoria{
+    width: 100vh;
+    grid-area: imagen;
+}
+
+.displayFamilia{
+    grid-area: titulo;
+}
+
+.displayParrafo{
+    grid-area: descripcion;
+    margin-left: 5%;
+    font-style: italic;
+}
+
 
 /*--------------------------------------SECCION WINE EXPERIENCE----------------------------------*/
 /*MAIN INFORMACION SOBRE WINE EXPERIENCE*/
@@ -246,15 +318,29 @@ video{
 }
 
 .imgWineExperience{
-    height:450px;
+  
+    @include portada();
     background-image: url(../img/wineExperienceFoto1.jpg);
-    background-size:cover;
-    color:transparent;
+
+    h1{
+        color: ghostwhite;
+    }
+   
+    p{
+        color: aliceblue;
+        margin:0 10% 10% 10%;
+    }
     
 }
 .subtituloWineExperience{
     margin: 80px 0 0 10px;
     color: rgba(0, 0, 0, 0.795);
+}
+
+.botonUbicacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 #detalleWineExperience{
@@ -283,73 +369,23 @@ video{
     
 }
 
-
-/*--------------------------------------SECCION HISTORIA----------------------------------*/
-
-.portadaHistoria{
-    height: 80vh;
-    background-image: url(../img/nuestraHistoriaPortada.jpg);
-    background-size:cover;
- 
-}
-
-#tituloHistoria{
-    text-align: center;
-    padding-top: 20px;
-
-}
-
-
-.seccionHistoria{
-    display: grid;
-    grid-template-areas:
-    "titulo"
-    "imagen"
-    "descripcion";
-    justify-items: center;
-    row-gap: 10%;
-    height: 100vh;
-    margin-left: 5%;
-   
-}
-
-.imagenHistoria{
-    width: 100vh;
-    grid-area: imagen;
-}
-
-.displayFamilia{
-    grid-area: titulo;
-}
-
-.displayParrafo{
-    grid-area: descripcion;
-}
-/*--------------------------------------SECCION VINOS----------------------------------*/
-
-.subtituloVinos{
-    @include columna-flex();
-    justify-content: center;
-    margin: 5vh;
-    font-size: 50px;
-   font-weight:200;
-
-}
-
 /*--------------------------------------SECCION CONTACTO----------------------------------*/
 
 .portadaContacto{
-    height:80vh;
+    @include portada();
     background-image: url(../img/contacto.jpg);
-    background-size:cover;
-}
 
+    h1{
+        color: ghostwhite;
+    }
+}
 
 
 .formulario{
     border: 1px black solid;
     border-radius: 1%;
-    background-color: cornsilk;
+    background-color: transparent;
+    padding: 2%;
 
 }
 

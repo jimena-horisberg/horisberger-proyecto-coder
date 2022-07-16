@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-
-    <header id="headerIndex" class="portadaContacto">
+    <!--HEADER Y NAVBAR-->
+    <header>
        
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -39,45 +39,50 @@
             </div>
           </nav>
           
-          <h1>Bodega La Regina</h1>
+          <!--PORTADA-->
+          <div class="portadaContacto">
+            <h1>Contacto</h1>
+          </div>
+
     </header>
 
+    <!--FORMULARIO-->
     <main>
 
-        <h2>Contacto</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae neque odit voluptates saepe, consequatur sint vel minus numquam autem ex omnis nulla sapiente quas sed dolores expedita accusantium harum consectetur.</p>
 
+        <form action="" class="container-fluid col-5 formulario">
+            <div class=" con col-5">
+              <label for="formGroupExampleInput" class="form-label">Nombre y apellido</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+            </div>
+        
+            <div class=" col-5">
+              <label for="exampleFormControlInput1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+            </div>
+            <div class=" col-5">
+              <label for="exampleFormControlTextarea1" class="form-label">Escribe tu mensaje</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          
+            <div class=" col-5 form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Deseo recibir novedades 
+              </label>
+            </div>
 
-<form action="" class="container-fluid col-5 formulario">
-        <div class=" con col-5">
-          <label for="formGroupExampleInput" class="form-label">Nombre y apellido</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
-        </div>
-    
-        <div class=" col-5">
-          <label for="exampleFormControlInput1" class="form-label">Email</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
-        </div>
-        <div class=" col-5">
-          <label for="exampleFormControlTextarea1" class="form-label">Escribe tu mensaje</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
+            <div class="col-5">
+              <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+  
+        </form>
       
-        <div class=" col-5 form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-          <label class="form-check-label" for="flexCheckChecked">
-            Deseo recibir novedades 
-          </label>
-        </div>
-
-        <div class="col-5">
-          <button class="btn btn-primary" type="submit">Enviar</button>
-        </div>
- 
-</form>
-
 
     </main>
 
+    <!--FOOTER-->
     <footer class="footerIndex">
         © 2022. Bodega La Regina Valle de Uco - Mendoza, Argentina
     </footer>
