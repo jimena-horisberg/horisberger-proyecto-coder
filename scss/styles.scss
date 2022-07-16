@@ -527,7 +527,7 @@ margin-left: 0%;
 }
  /*------------------------------------------------------------------------------------*/
  /*IPAD*/
- @media screen and (min-width:481px) {
+ @media screen and (min-width:481px) and (max-device-width: 768px) {
     headerIndex{
         height:fit-content;
     }
@@ -585,10 +585,3 @@ margin-left: 0%;
  
 }
  
-@media screen and (min-width:1023px){
-    /*modificaciones media queries Nuestra Historia*/
-
-    #bodyHistoria{
-        width: fit-content;
-    }
-}

@@ -405,7 +405,7 @@ video {
 
 /*------------------------------------------------------------------------------------*/
 /*IPAD*/
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 481px) and (max-device-width: 768px) {
   headerIndex {
     height: fit-content; }
   #textoChef {
@@ -439,8 +439,3 @@ video {
     .contactoContainer .formulario {
       width: 100%;
       margin: 5%; } }
-
-@media screen and (min-width: 1023px) {
-  /*modificaciones media queries Nuestra Historia*/
-  #bodyHistoria {
-    width: fit-content; } }
